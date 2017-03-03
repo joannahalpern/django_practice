@@ -6,7 +6,7 @@ from django.http import Http404
 from django.core.urlresolvers import reverse
 import datetime
 
-from .form import RenewBookForm
+from .forms import SortForm
 
 # ----Original----
 # def index(request):
@@ -32,9 +32,8 @@ from .form import RenewBookForm
 # returns an HttpResponse object of the given template rendered with the given context.
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list}
+    context = {'latest_question_list': latest_question_list, 'form': SortForm}
     return render(request, 'polls/index.html', context)
-
 # ----Originally----
 # def detail(request, question_id):
 #     return HttpResponse("You're looking at question %s." % question_id)
@@ -113,6 +112,22 @@ def renew_book_librarian(request, pk):
 
     return render(request, 'catalog/book_renew_librarian.html', {'form': form, 'bookinst':book_inst})
 
+def search(request):
+    """ Handle registration form """
+    if request.method == 'POST':
+        response = dict(
+            errors=list(),
+        )
+
+        search_result = request.POST['search']
+
+        context = {}
+        context['results'] = search_result
+        return render(request, 'polls/selected.html', context)
+    else:
+        return render(request, 'polls/selected.html')
+
+
 def sort(request):
     """ Handle registration form """
     if request.method == 'POST':
@@ -120,10 +135,10 @@ def sort(request):
             errors=list(),
         )
 
-        search_query = request.POST['search']
+        sort_option = request.POST['sort_choice']
 
         context = {}
-        context['results'] = search_query
+        context['results'] = sort_option
         return render(request, 'polls/selected.html', context)
     else:
         return render(request, 'polls/selected.html')

@@ -12,12 +12,21 @@
     <p>No polls are available.</p>
 {% endif %}
 
-<h1>Choice</h1>
+<h1>Search</h1>
 
 <section class="search-section">
-    <form method="POST" action='{% url 'polls:sort' %}'>
+    <form method="POST" action='{% url 'polls:search' %}'>
         {% csrf_token %}
         <input type="text" class="search-bar" name="search">
         <input type="submit" value="Search">
     </form>
 </section>
+
+{% block content %}
+<h1>Choice</h1>
+<form role="form" action="{% url 'polls:sort' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

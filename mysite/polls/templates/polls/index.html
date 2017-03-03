@@ -27,6 +27,5 @@
 <form role="form" action="{% url 'polls:sort' %}" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
 </form>
 {% endblock %}

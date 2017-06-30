@@ -3,6 +3,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import Http404
 from django.core.urlresolvers import reverse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.core.urlresolvers import reverse_lazy
 
 import datetime
 
@@ -149,3 +150,10 @@ class AlbumCreate(CreateView):
     model = Album
     fields = ['artist', 'genre']
 
+class AlbumUpdate(UpdateView):
+    model = Album
+    fields = ['artist', 'genre']
+
+class AlbumDelete(DeleteView):
+    model = Album
+    success_url = reverse_lazy('polls:index')

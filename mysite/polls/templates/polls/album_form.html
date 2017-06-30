@@ -13,17 +13,13 @@
 
 {#        {% include 'polls/form-template.html' %}#}
 {# In polls/form-template.html write the following#}
-            {% for field in form %}
-                <div class="form-group">
-                        <label>{{ field.label_tag }}</label>
-                        <div>{{ field }}</div>
-                </div>
-            {% endfor %}
+{#            {% for field in form %}#}
+                    <label>{{ form.genre.label_tag }}</label>
+                    <div>{{ form.genre }}</div>
 
-
-
-{#            <label>Artist</label>#}
-{#            <div></div>#}
+                    <label>{{ form.artist.label_tag }}</label>
+                    <div>{{ form.artist }}</div>
+{#            {% endfor %}#}
             <button type="submit">Submit</button>
         </div>
     </form>

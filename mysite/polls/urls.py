@@ -17,8 +17,6 @@ urlpatterns = [
     url(r'^search/', views.search, name='search'),
     url(r'^sort/', views.sort, name='sort'),
 
-    url(r'polls/album/add/$', views.AlbumCreate.as_view(), name='album-add'),
-
-    url(r'polls/album/(?P<pk>[0-9]+)/$', views.AlbumUpdate.as_view(), name='album-update'),
-
+    url(r'album/add/$', views.AlbumCreate.as_view(), name='album-add'),
+    url(r'album/(?P<pk>[0-9]+)/$', views.AlbumUpdate.as_view(), name='album-update'),
 ]

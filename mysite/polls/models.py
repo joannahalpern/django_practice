@@ -22,9 +22,16 @@ class Choice(models.Model):
     def __str__(self):
         return self.choice_text
 
+class Genres(models.Model):
+    GenreOptions = (
+        ('ACT', 'action'),
+        ('COM', 'comedy'),
+    )
+    type = models.CharField(max_length=20, choices=GenreOptions)
+
 class Album(models.Model):
     artist = models.CharField(max_length=250)
-    genre = models.CharField(max_length=100)
+    genre = models.ForeignKey(Genres)
 
     def get_absolute_url(self):
         return reverse('polls:index')

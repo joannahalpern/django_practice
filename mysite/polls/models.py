@@ -31,7 +31,8 @@ class Genres(models.Model):
 
 class Album(models.Model):
     artist = models.CharField(max_length=250)
-    genre = models.ForeignKey(Genres)
+    genre = models.CharField(max_length=250)
+    image = models.FileField()
 
     def get_absolute_url(self):
         return reverse('polls:index')

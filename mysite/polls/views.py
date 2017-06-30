@@ -147,5 +147,5 @@ def sort(request):
 
 class AlbumCreate(CreateView):
     model = Album
-    fields = ['artist']
+    fields = ['artist', 'genre']
 

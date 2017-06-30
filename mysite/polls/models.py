@@ -8,8 +8,8 @@ class Album(models.Model):
     artist = models.CharField(max_length=250)
     genre = models.CharField(max_length=100)
 
-    # def get_absolute_url(self):
-    #     return reverse('index')
+    def get_absolute_url(self):
+        return reverse('index')
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)

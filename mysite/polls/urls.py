@@ -16,4 +16,7 @@ urlpatterns = [
 
     url(r'^search/', views.search, name='search'),
     url(r'^sort/', views.sort, name='sort'),
+
+    url(r'album/add/$', views.AlbumCreate.as_view(), name='album-add'),
+
 ]

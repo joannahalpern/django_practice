@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Album</title>
+</head>
+<body>
+    <h1>Album</h1>
+
+    <form action="/polls/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+
+{#        {% include 'polls/form-template.html' %}#}
+{# In polls/form-template.html write the following#}
+            {% for field in form %}
+                <div class="form-group">
+                        <label>{{ field.label_tag }}</label>
+                        <div>{{ field }}</div>
+                </div>
+            {% endfor %}
+
+
+
+{#            <label>Artist</label>#}
+{#            <div></div>#}
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

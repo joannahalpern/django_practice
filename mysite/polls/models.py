@@ -2,8 +2,15 @@ import datetime
 
 from django.db import models
 from django.utils import timezone
+from django.core.urlresolvers import reverse
 
-# Create your models here.
+class Album(models.Model):
+    artist = models.CharField(max_length=250)
+    genre = models.CharField(max_length=100)
+
+    # def get_absolute_url(self):
+    #     return reverse('index')
+
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')

@@ -1,12 +1,14 @@
 from django.http import HttpResponseRedirect, HttpResponse
-from .models import Question
 from django.shortcuts import get_object_or_404, render
 from django.http import Http404
-
 from django.core.urlresolvers import reverse
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
 import datetime
 
 from .forms import SortForm
+
+from .models import Question, Album
 
 # ----Original----
 # def index(request):
@@ -142,3 +144,8 @@ def sort(request):
         return render(request, 'polls/selected.html', context)
     else:
         return render(request, 'polls/selected.html')
+
+class AlbumCreate(CreateView):
+    model = Album
+    fields = ['artist']
+

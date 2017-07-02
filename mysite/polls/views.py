@@ -4,10 +4,11 @@ from django.http import Http404
 from django.core.urlresolvers import reverse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.core.urlresolvers import reverse_lazy
+from django.views import View
 
 import datetime
 
-from .forms import SortForm
+from .forms import SortForm, BasicForm, QuestionsForm
 
 from .models import Question, Album
 
@@ -35,7 +36,10 @@ from .models import Question, Album
 # returns an HttpResponse object of the given template rendered with the given context.
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list, 'form': SortForm}
+    context = {
+        'latest_question_list': latest_question_list,
+        'sort_form': SortForm,
+    }
     return render(request, 'polls/index.html', context)
 # ----Originally----
 # def detail(request, question_id):
@@ -157,3 +161,37 @@ class AlbumUpdate(UpdateView):
 class AlbumDelete(DeleteView):
     model = Album
     success_url = reverse_lazy('polls:index')
+
+class BasicView(View):
+    def get(self, request, *args, **kwargs):
+        context = {
+            "form": BasicForm
+        }
+        return render(request, "polls/basic.html", context) # Try Django 1.8 & 1.9 http://joincfe.com/youtube
+
+    def post(self, request, *args, **kwargs):
+        form = BasicForm(request.POST)
+        if form.is_valid():
+            print(form.cleaned_data)
+
+        context = {
+            "form": form
+        }
+        return render(request, "polls/basic.html", context)
+
+class QuestionsView(View):
+    def get(self, request, *args, **kwargs):
+        context = {
+            "form": QuestionsForm
+        }
+        return render(request, "polls/questions.html", context)
+
+    def post(self, request, *args, **kwargs):
+        form = QuestionsForm(request.POST)
+        if form.is_valid():
+            print(form.cleaned_data)
+
+        context = {
+            "form": form
+        }
+        return render(request, "polls/questions.html", context)

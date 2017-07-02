@@ -14,3 +14,14 @@ SortOptions = (
 
 class SortForm(forms.Form):
     sort_choice = forms.ChoiceField(widget=forms.Select(attrs={'onchange': 'this.form.submit();'}), choices=SortOptions)
+
+class BasicForm(forms.Form):
+    name = forms.CharField(max_length=20, label='First Name')
+
+GenderOptions = (
+    ('male', 'male'),
+    ('female', 'female'),
+    ('other', 'other'),
+)
+class QuestionsForm(forms.Form):
+    gender = forms.ChoiceField(widget=forms.Select(attrs={'onchange': 'this.form.submit();'}), choices=GenderOptions)

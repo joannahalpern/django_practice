@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b6abeb-3c3f-49d9-bc11-3e5754d69b4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/models.py" afterPath="$PROJECT_DIR$/polls/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/templates/polls/album_form.html" afterPath="$PROJECT_DIR$/polls/templates/polls/album_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/polls/templates/polls/basic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/polls/templates/polls/questions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/forms.py" afterPath="$PROJECT_DIR$/polls/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/templates/polls/index.html" afterPath="$PROJECT_DIR$/polls/templates/polls/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/urls.py" afterPath="$PROJECT_DIR$/polls/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/views.py" afterPath="$PROJECT_DIR$/polls/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="450">
+              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -56,8 +57,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="438">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -68,8 +69,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="460">
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -77,56 +78,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="album_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/templates/polls/album_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polls_album" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/546d1a5c/69316227-3011-49ff-9848-3d7a10c560ad/polls_album">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="124" column="20" lean-forward="false" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polls/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="652">
+              <caret line="193" column="19" lean-forward="true" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <element signature="e#398#416#0" expanded="false" />
-                <element signature="e#1439#1459#0" expanded="false" />
-                <element signature="e#1918#2044#0" expanded="false" />
-                <element signature="e#2047#2080#0" expanded="false" />
-                <element signature="e#2255#2991#0" expanded="false" />
-                <element signature="e#2991#3011#0" expanded="false" />
-                <element signature="e#3482#4486#0" expanded="false" />
+                <element signature="e#454#472#0" expanded="false" />
+                <element signature="e#1523#1543#0" expanded="false" />
+                <element signature="e#2002#2128#0" expanded="false" />
+                <element signature="e#2131#2164#0" expanded="false" />
+                <element signature="e#2339#3075#0" expanded="false" />
+                <element signature="e#3075#3095#0" expanded="false" />
+                <element signature="e#3566#4570#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/basic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questions.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/questions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,13 +154,15 @@
         <option value="$PROJECT_DIR$/polls/templates/polls/book_renew_librarian.html" />
         <option value="$PROJECT_DIR$/polls/form.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/selected.html" />
-        <option value="$PROJECT_DIR$/polls/templates/polls/index.html" />
-        <option value="$PROJECT_DIR$/polls/urls.py" />
-        <option value="$PROJECT_DIR$/polls/forms.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/album_form.html" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/polls/models.py" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/basic.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/questions.html" />
+        <option value="$PROJECT_DIR$/polls/urls.py" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/index.html" />
+        <option value="$PROJECT_DIR$/polls/forms.py" />
         <option value="$PROJECT_DIR$/polls/views.py" />
       </list>
     </option>
@@ -209,6 +207,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -216,13 +250,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Try-Django-1.10" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joann\Documents\GitHub\mysite_new\django_practice\mysite\polls\templates\polls" />
+    </key>
   </component>
   <component name="RunManager" selected="Django server.mysite">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -507,17 +546,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24436091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11761547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32842582" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20300752" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20300752" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3952435" sideWeight="0.49785176" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2423556" sideWeight="0.49785176" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -561,23 +600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="133" column="24" lean-forward="false" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polls/templates/polls/selected.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -617,7 +639,7 @@
         <state relative-caret-position="396">
           <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,13 +650,13 @@
           <caret line="133" column="24" lean-forward="true" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -670,7 +692,7 @@
         <state relative-caret-position="352">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -681,13 +703,13 @@
           <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -719,7 +741,7 @@
         <state relative-caret-position="66">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,13 +775,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -793,13 +815,13 @@
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="67" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -833,13 +855,13 @@
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="67" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -858,13 +880,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,24 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polls/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/546d1a5c/69316227-3011-49ff-9848-3d7a10c560ad/polls_genres">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -947,14 +951,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="124" column="20" lean-forward="false" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -980,34 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polls/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/album_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/WIN_20170629_21_08_20_Pro_zCjsbah.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1023,19 +991,87 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/album_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="124" column="20" lean-forward="false" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/questions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/polls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        <state relative-caret-position="652">
+          <caret line="193" column="19" lean-forward="true" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#398#416#0" expanded="false" />
-            <element signature="e#1439#1459#0" expanded="false" />
-            <element signature="e#1918#2044#0" expanded="false" />
-            <element signature="e#2047#2080#0" expanded="false" />
-            <element signature="e#2255#2991#0" expanded="false" />
-            <element signature="e#2991#3011#0" expanded="false" />
-            <element signature="e#3482#4486#0" expanded="false" />
+            <element signature="e#454#472#0" expanded="false" />
+            <element signature="e#1523#1543#0" expanded="false" />
+            <element signature="e#2002#2128#0" expanded="false" />
+            <element signature="e#2131#2164#0" expanded="false" />
+            <element signature="e#2339#3075#0" expanded="false" />
+            <element signature="e#3075#3095#0" expanded="false" />
+            <element signature="e#3566#4570#0" expanded="false" />
           </folding>
         </state>
       </provider>

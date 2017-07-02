@@ -26,9 +26,9 @@
 <h1>Choice</h1>
 <form role="form" action="{% url 'polls:sort' %}" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ sort_form.as_p }}
 </form>
 {% endblock %}
 
-<h1>Goto Modelform</h1>
+<h1>Go to CreateView</h1>
 <a href="{% url 'polls:album-add' %}">Add an album</a>

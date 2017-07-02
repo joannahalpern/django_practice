@@ -20,13 +20,7 @@ class SortForm(forms.Form):
 class BasicForm(forms.Form):
     name = forms.CharField(max_length=20, label='First Name')
 
-GenderOptions = (
-    ('male', 'male'),
-    ('female', 'female'),
-    ('other', 'other'),
-)
 class QuestionsForm(forms.ModelForm):
     class Meta:
         model = Questions
         fields = ['first_name', 'last_name', 'gender']
-    # gender = forms.ChoiceField(widget=forms.Select(attrs={'onchange': 'this.form.submit();'}), choices=GenderOptions)

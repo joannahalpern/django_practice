@@ -179,19 +179,24 @@ class BasicView(View):
         }
         return render(request, "polls/basic.html", context)
 
-class QuestionsView(View):
-    def get(self, request, *args, **kwargs):
-        context = {
-            "form": QuestionsForm
-        }
-        return render(request, "polls/questions.html", context)
+# class QuestionsView(View):
+#     def get(self, request, *args, **kwargs):
+#         context = {
+#             "form": QuestionsForm
+#         }
+#         return render(request, "polls/questions.html", context)
+#
+#     def post(self, request, *args, **kwargs):
+#         form = QuestionsForm(request.POST)
+#         if form.is_valid():
+#             print(form.cleaned_data)
+#
+#         context = {
+#             "form": form
+#         }
+#         return render(request, "polls/questions.html", context)
 
-    def post(self, request, *args, **kwargs):
-        form = QuestionsForm(request.POST)
-        if form.is_valid():
-            print(form.cleaned_data)
-
-        context = {
-            "form": form
-        }
-        return render(request, "polls/questions.html", context)
+class QuestionsCreateView(CreateView):
+    form_class = QuestionsForm
+    template_name = "polls/questions.html"
+    success_url = '../'

@@ -1,5 +1,7 @@
 from django import forms
 
+from .models import Questions
+
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 import datetime  # for checking renewal date range.
@@ -23,5 +25,8 @@ GenderOptions = (
     ('female', 'female'),
     ('other', 'other'),
 )
-class QuestionsForm(forms.Form):
-    gender = forms.ChoiceField(widget=forms.Select(attrs={'onchange': 'this.form.submit();'}), choices=GenderOptions)
+class QuestionsForm(forms.ModelForm):
+    class Meta:
+        model = Questions
+        fields = ['first_name', 'last_name', 'gender']
+    # gender = forms.ChoiceField(widget=forms.Select(attrs={'onchange': 'this.form.submit();'}), choices=GenderOptions)

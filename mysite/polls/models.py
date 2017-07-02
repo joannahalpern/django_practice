@@ -36,3 +36,14 @@ class Album(models.Model):
 
     def get_absolute_url(self):
         return reverse('polls:index')
+
+GenderOptions = (
+    ('male', 'male'),
+    ('female', 'female'),
+    ('other', 'other'),
+)
+
+class Questions(models.Model):
+    first_name = models.CharField(max_length=250)
+    last_name = models.CharField(max_length=250)
+    gender = models.CharField(max_length=20, choices=GenderOptions)

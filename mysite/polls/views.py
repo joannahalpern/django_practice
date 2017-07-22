@@ -10,7 +10,7 @@ import datetime
 
 from .forms import SortForm, BasicForm, QuestionsForm
 
-from .models import Question, Album
+from .models import Question, Album, Questions
 
 # ----Original----
 # def index(request):
@@ -199,4 +199,15 @@ class BasicView(View):
 class QuestionsCreateView(CreateView):
     form_class = QuestionsForm
     template_name = "polls/questions.html"
-    success_url = '../'
+    success_url = '../../'
+
+# class QuestionsUpdateView(UpdateView):
+#     model = Questions
+#     fields = '__all__'
+#     template_name = "polls/questions.html"
+
+class QuestionsUpdateView(UpdateView):
+    model = Questions
+    form_class = QuestionsForm
+    template_name = "polls/questions.html"
+    success_url = '../../'

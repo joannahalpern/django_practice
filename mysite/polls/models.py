@@ -42,8 +42,32 @@ GenderOptions = (
     ('female', 'female'),
     ('other', 'other'),
 )
+BACKGROUND = (
+        ('Sephardi', 'sephardi'),
+        ('Ashkenazi', 'ashkenazi'),
+)
+BACKGROUND2 = (
+        ('1', 'sephardi'),
+        ('2', 'ashkenazi'),
+        ('3', 'mizrachi'),
+        ('4', 'other'),
+)
+
+class Background(models.Model):
+    background = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.background
+
+class Gender(models.Model):
+    gender = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.gender
 
 class Questions(models.Model):
     first_name = models.CharField(max_length=250)
     last_name = models.CharField(max_length=250)
-    gender = models.CharField(max_length=20, choices=GenderOptions)
+    gender = models.ForeignKey(Gender)
+    background = models.ManyToManyField(Background)
+

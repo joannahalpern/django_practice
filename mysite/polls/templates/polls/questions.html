@@ -9,6 +9,19 @@
     <form action='' method="post">
         {% csrf_token %}
         {{ form.as_p }}
+
+
+{#     <li>#}
+{#        <label for="id_background_0">#}
+{#            <input id="id_background_0" name="background" type="checkbox" value="1">Sephardi#}
+{#        </label>#}
+{#    </li>#}
+{#    <li>#}
+{#        <label for="id_background_1">#}
+{#            <input id="id_background_1" name="background" type="checkbox" value="2">Ashkenazi#}
+{#        </label>#}
+{#    </li>#}
+
         <input type="submit" value="Submit">
     </form>
 </body>

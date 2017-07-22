@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^basic/', views.BasicView.as_view(), name='basic'),
     # url(r'^questions/', views.QuestionsView.as_view(), name='questions'),
     url(r'^questions/add', views.QuestionsCreateView.as_view(), name='questions'),
+    url(r'^questions/(?P<pk>[0-9]+)/$', views.QuestionsUpdateView.as_view(), name='update'),
 
     url(r'album/add/$', views.AlbumCreate.as_view(), name='album-add'),
     url(r'album/(?P<pk>[0-9]+)/$', views.AlbumUpdate.as_view(), name='album-update'),
